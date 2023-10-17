@@ -1,0 +1,10 @@
+.menu__content {
+    margin-top: 200px;
+    text-align: center;
+}
+
+.menu__content ul li a {
+    color: #3860fc;
+    font-size: 32px;
+    text-decoration: none;
+}

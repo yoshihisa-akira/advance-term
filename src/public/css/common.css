@@ -1,0 +1,12 @@
+body {
+    background-color: #eeeeee;
+}
+
+.header__title {
+    margin-left: 20px;
+}
+
+.header__title h1,.header__title a{
+    color: #3860fc;
+    text-decoration: none;
+}

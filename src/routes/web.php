@@ -1,18 +1,14 @@
 <?php
 
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\ShopController;
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
+// 飲食店一覧ページ表示
+Route::get('/', [AuthController::class, 'index']);
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// 飲食店詳細ページ表示
+Route::get('/detail/{shop_id}', [ShopController::class, 'detail']);
+
+// テスト
+Route::get('/test',[ShopController::class, 'test']);
