@@ -12,7 +12,7 @@
         <span>会員登録ありがとうございます</span>
     </div>
     <div class="form__button">
-        <a class="form__button-submit" href="">ログインする</a>
+        <a class="form__button-submit" href="/login">ログインする</a>
     </div>
 </div>
 @endsection

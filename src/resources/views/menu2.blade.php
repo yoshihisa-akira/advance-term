@@ -13,9 +13,9 @@
 <body>
     <div class="menu__content">
         <ul style="list-style: none;">
-            <li><a href="">Home</a></li>
-            <li><a href="">Registration</a></li>
-            <li><a href="">Login</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/register">Registration</a></li>
+            <li><a href="/login">Login</a></li>
         </ul>
     </div>
 </body>

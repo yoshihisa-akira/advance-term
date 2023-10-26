@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    @if (Auth::check())
     <header class="header">
         <div class="header__inner">
             <a class="header__logo" href="/">
@@ -18,9 +19,23 @@
             </a>
         </div>
         <div class="header__title">
-            <h1><a href="">Rese</a></h1>
+            <h1><a href="/menu1">Rese</a></h1>
         </div>
     </header>
+
+    @else
+    <header class="header">
+        <div class="header__inner">
+            <a class="header__logo" href="/">
+
+            </a>
+        </div>
+        <div class="header__title">
+            <h1><a href="/menu2">Rese</a></h1>
+        </div>
+    </header>
+
+    @endif
 
     <main>
         @yield('content')

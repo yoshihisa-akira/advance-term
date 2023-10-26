@@ -21,6 +21,6 @@ class ShopController extends Controller
 
     public function test()
     {
-        return view('register');
+        return view('thanks');
     }
 }

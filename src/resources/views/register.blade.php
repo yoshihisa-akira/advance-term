@@ -14,7 +14,7 @@
         @csrf
         <div class="form__group">
             <div class="form__group-icon">
-                <img src="images/人物アイコン.png" alt="人物" width="50px" height="40px">
+                <img src="img/user.png" alt="人物" width="256px" height="256px">
             </div>
             <div class="form__group-content">
                 <div class="form__input--text">
