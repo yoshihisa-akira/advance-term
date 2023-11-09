@@ -13,12 +13,12 @@
 <body>
     <div class="menu__content">
         <ul style="list-style: none;">
-            <li><a href="index.blade.php">Home</a></li>
+            <li><a href="/">Home</a></li>
             <form class="form" action="/logout" method="post">
                 @csrf
                 <button class="menu__button">Logout</button>
             </form>
-            <li><a href="">Mypage</a></li>
+            <li><a href="/mypage">Mypage</a></li>
         </ul>
     </div>
 </body>

@@ -10,10 +10,11 @@
     <div class="login-form__heading">
         <h3 class='login-form__heading__title'>Login</h3>
     </div>
-    <form class="form">
+    <form class="form" action="/login" method="post">
+        @csrf
         <div class="form__group">
             <div class="form__group-icon">
-                <img src="images/メールの無料アイコン.png" alt="メール" width="50px" height="40px">
+                <img src="{{ asset('img/mail.png') }}" alt="" width="20px" height="20px">
             </div>
             <div class="form__group-content">
                 <div class="form__input--text">
@@ -30,7 +31,7 @@
         </div>
         <div class="form__group">
             <div class="form__group-icon">
-                <img src="images/カギアイコン.png" alt="カギ" width="50px" height="40px">
+                <img src="{{ asset('img/カギアイコン.png') }}" alt="" width="20px" height="20px">
             </div>
             <div class="form__group-content">
                 <div class="form__input--text">

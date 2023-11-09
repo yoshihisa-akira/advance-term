@@ -13,19 +13,16 @@ class AuthController extends Controller
         return view('index');
     }
 
+    // 仙人詳細表示
+    public function sennin()
+    {
+        return view('sennin');
+    }
+
     // 会員登録ページ表示
     public function register()
     {
         return view('register');
-    }
-
-    // 会員登録情報送信
-    public function registerPost(Request $request)
-    {
-        $users = $request->only(['name', 'email', 'password']);
-
-        User::create($users);
-        return redirect('/thanks');
     }
 
     // サンクスページ表示
@@ -50,5 +47,11 @@ class AuthController extends Controller
     public function menu2()
     {
         return view('menu2');
+    }
+
+    // マイページ表示
+    public function mypage()
+    {
+        return view('mypage');
     }
 }
