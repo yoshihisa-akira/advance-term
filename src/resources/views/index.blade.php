@@ -21,7 +21,7 @@
                 <p class="card__content-tag-item card__content-tag-item--last">#寿司</p>
             </div>
             <div class="button">
-                <a class="button-submit" href="/detail">詳しくみる</a>
+                <a class="button-submit" href="/sennin">詳しくみる</a>
             </div>
         </div>
     </div>
