@@ -20,7 +20,7 @@ localhost
 ## 使用技術
 laravel 8.83.27, php 7.4.9
 
-
+## テーブル
 usersテーブル					
 カラム名	　型	　　　      PRIMARY KEY	UNIQUE KEY	NOT NULL	FOREIGN KEY
 id	　　　　unsigned bigint	○		                    ○	
@@ -28,4 +28,4 @@ name	　　　string			                            ○
 email	　　　string			                            ○	
 password	　string			                            ○	
 created_at	timestamp				
-updated_at	timestamp				
+updated_at	timestamp	
