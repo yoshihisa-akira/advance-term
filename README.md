@@ -21,11 +21,11 @@ localhost
 laravel 8.83.27, php 7.4.9
 
 ## テーブル
-usersテーブル					
-カラム名	　型	　　　      PRIMARY KEY	UNIQUE KEY	NOT NULL	FOREIGN KEY
-id	　　　　unsigned bigint	○		                    ○	
-name	　　　string			                            ○	
-email	　　　string			                            ○	
-password	　string			                            ○	
+usersテーブル						
+カラム名	　型	　　　      PUNIQUE KEY		FOREIGN KEY
+id	　　　　unsigned bigint	RIMARY KEY NOT NULL                   	
+name	　　　string NOT NULL			                            	
+email	　　　string NOT NULL		                            
+password	　string NOT NULL			                            
 created_at	timestamp				
 updated_at	timestamp	
