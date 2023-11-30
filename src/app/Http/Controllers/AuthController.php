@@ -54,4 +54,10 @@ class AuthController extends Controller
     {
         return view('mypage');
     }
+
+    // 予約完了ページ表示
+    public function done()
+    {
+        return view('done');
+    }
 }

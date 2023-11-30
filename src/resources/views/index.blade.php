@@ -7,6 +7,9 @@
 
 @section('content')
 <!-- 飲食店一覧ページ -->
+<div class="example2">
+    <input type="checkbox" checked id="1" name="example2"><label for="1"></label>
+</div>
 
 <div class="card__group">
     <!-- 仙人 -->
@@ -23,6 +26,13 @@
             <div class="button">
                 <a class="button-submit" href="/sennin">詳しくみる</a>
             </div>
+
+            <div class="example2">
+                <input type="checkbox" checked id="1" name="example2"><label for="1"></label>
+            </div>
+            <style>
+
+            </style>
         </div>
     </div>
 

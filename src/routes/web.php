@@ -88,5 +88,8 @@ Route::get('/menu2', [AuthController::class, 'menu2']);
 // マイページ表示
 Route::get('/mypage', [AuthController::class, 'mypage']);
 
+// 予約完了ページ表示
+Route::get('/done', [AuthController::class, 'done']);
+
 // テスト
 Route::get('/test',[ShopController::class, 'test']);

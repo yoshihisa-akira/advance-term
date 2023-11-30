@@ -1,0 +1,28 @@
+.done__group {
+    background-color: #fff;
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 2px 1px 3px #aaa;
+    height: 270px;
+    margin: 100px auto 0;
+    text-align: center;
+    width: 400px;
+}
+
+.done__heading {
+    font-size: 21px;
+    padding-top: 90px;
+}
+
+.done__button {
+    padding-top: 33px;
+}
+
+.done__button-submit {
+    background: #3860fc;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    padding: 9px 12px;
+    text-decoration: none;
+}
