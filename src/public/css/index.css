@@ -7,6 +7,7 @@
 }
 
 .card {
+    background-color: #ffffff;
     border-radius: 3px;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
     height: 280px;
@@ -51,47 +52,11 @@
     width: 200px;
 }
 
-
-
-
-.example2 {
-    display: flex;
+.test {
+    color: aliceblue;
+    font-size: 10px;
 }
 
-.example2 label {
-    position: absolute;
-    width: 50px;
-    height: 40px;
-    /*keep #heart inside the #favorite*/
-    right: 10%;
-    bottom: 10%;
-}
-
-.example2 label:before,
-.example2 label:after {
-    position: absolute;
-    content: "";
-    left: 25px;
-    top: 0;
-    width: 25px;
-    height: 40px;
-    background: #f88dc8;
-    border-radius: 50px 50px 0 0;
-    transform: rotate(-45deg);
-    transform-origin: 0 100%;
-}
-
-.example2 label:after {
-    left: 0;
-    transform: rotate(45deg);
-    transform-origin: 100% 100%;
-}
-
-.example2 input:checked+label {
-    background: #1a720d;
-    color: #FFF;
-}
-
-.example2 input {
-    display: none;
+.hurt-button {
+    margin-left: 140px;
 }

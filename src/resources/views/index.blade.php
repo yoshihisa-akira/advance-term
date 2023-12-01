@@ -7,10 +7,6 @@
 
 @section('content')
 <!-- 飲食店一覧ページ -->
-<div class="example2">
-    <input type="checkbox" checked id="1" name="example2"><label for="1"></label>
-</div>
-
 <div class="card__group">
     <!-- 仙人 -->
     <div class="card">
@@ -25,14 +21,17 @@
             </div>
             <div class="button">
                 <a class="button-submit" href="/sennin">詳しくみる</a>
+                <img id="click_img" class="hurt-button" src="{{ asset('img/hurt_gray.png') }}" alt="">
+                <script>
+                    var click = 0;
+                    var img = ['img/hurt_gray.png', 'img/hurt_red.png'];
+                    document.getElementById('click_img').onclick = function() {
+                        click++;
+                        this.src = img[click % img.length];
+                    }
+                </script>
             </div>
 
-            <div class="example2">
-                <input type="checkbox" checked id="1" name="example2"><label for="1"></label>
-            </div>
-            <style>
-
-            </style>
         </div>
     </div>
 

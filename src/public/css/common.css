@@ -2,6 +2,11 @@ body {
     background-color: #eeeeee;
 }
 
+.header {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
 .header__title {
     margin-left: 20px;
 }
