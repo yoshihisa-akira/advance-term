@@ -8,38 +8,44 @@
 @section('content')
 <!-- マイページ -->
 <div class="flex">
+
     <div class="reserved__content">
         <div class="reserved__heading">
             <h3 class="reserved__heading-title">
                 予約状況
             </h3>
         </div>
+        @foreach($shopsReserved as $shopReserved)
         <div class="reserved__group">
-            <div class="reserved__group-number">
-                <p class="text">予約1</p>
-            </div>
+            <form class="reserved__group-number" action="/mypage" method="post">
+                @csrf
+                <p class="reserved--text">予約{{ $shopReserved->number }}</p>
+                <input type="hidden" name="id" value="{{ $shopReserved->id }}">
+                <input class="aaa" type="image" src="{{ asset('img/check.png') }}" alt="" width="30px" height="30px">
+            </form>
             <div class="reserved__group-flex">
                 <p class="text">Shop</p>
-                <p class="text">仙人</p>
+                <p class="text">{{ $shopReserved->reserved_shop }}</p>
             </div>
             <div class="reserved__group-flex">
                 <p class="text">Date</p>
-                <p class="text">2023-04-01</p>
+                <p class="text">{{ $shopReserved->reserved_date }}</p>
             </div>
             <div class="reserved__group-flex">
                 <p class="text">Time</p>
-                <p class="text">17:00</p>
+                <p class="text">{{ $shopReserved->reserved_time }}</p>
             </div>
             <div class="reserved__group-flex">
                 <p class="text">Number</p>
-                <p class="text">1人</p>
+                <p class="text">{{ $shopReserved->reserved_num }}</p>
             </div>
         </div>
+        @endforeach
     </div>
 
     <div class="user__content">
         <h1 class="user__name">
-            testさん
+            {{ $user->name }}さん
         </h1>
         <div class="user__favorite-shops">
             <h2 class="favorite-shops__title">

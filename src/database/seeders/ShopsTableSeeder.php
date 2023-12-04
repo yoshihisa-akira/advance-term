@@ -154,5 +154,6 @@ class ShopsTableSeeder extends Seeder
             'genre' => '寿司',
             'store_overview' => '毎日店主自ら市場等に出向き、厳選した魚介類が、お鮨をはじめとした繊細な料理に仕立てられます。また、選りすぐりの種類豊富なドリンクもご用意しております。'
         ];
+        DB::table('shops')->insert($param);
     }
 }

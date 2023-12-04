@@ -14,25 +14,27 @@
     @if (Auth::check())
     <header class="header">
         <div class="header__inner">
-            <a class="header__logo" href="/">
-
+            <a class="header__logo" href="/menu1">
+                <img class="logo" src="{{ asset('img/menu_logo.png') }}" alt="" width="40px" height="40px">
             </a>
+            <div class="header__title">
+                <h1><a href="/">Rese</a></h1>
+            </div>
         </div>
-        <div class="header__title">
-            <h1><a href="/menu1">Rese</a></h1>
-        </div>
+        @yield('header')
     </header>
 
     @else
     <header class="header">
         <div class="header__inner">
             <a class="header__logo" href="/menu2">
-
+                <img class="logo" src="{{ asset('img/menu_logo.png') }}" alt="" width="40px" height="40px">
             </a>
+            <div class="header__title">
+                <h1><a href="/">Rese</a></h1>
+            </div>
         </div>
-        <div class="header__title">
-            <h1><a href="/menu2">Rese</a></h1>
-        </div>
+        @yield('header')
     </header>
 
     @endif

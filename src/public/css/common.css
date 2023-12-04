@@ -3,8 +3,21 @@ body {
 }
 
 .header {
+    display: flex;
+    justify-content: space-between;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1150px;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.logo {
+    border-radius: 3px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
 }
 
 .header__title {

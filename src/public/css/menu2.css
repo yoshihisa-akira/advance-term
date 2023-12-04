@@ -1,3 +1,32 @@
+.header {
+    margin: 0 auto;
+    max-width: 1150px;
+}
+
+.header__inner {
+    margin-left: -6px;
+    margin-top: 26px;
+    width: 50%;
+}
+
+.header__logo {
+    text-decoration: none;
+    background-color: aqua;
+}
+
+.logo {
+    color: #fff;
+    background-color: #3860fc;
+    border-radius: 3px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    display: block;
+    font-size: 30px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 40px;
+}
+
 .menu__content {
     margin-top: 200px;
     text-align: center;

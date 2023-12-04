@@ -20,13 +20,11 @@
                 <div class="form__input--text">
                     <input type="email" name="email" value="{{ old('email') }}" placeholder="Email" />
                 </div>
-                <!-- エラー文実装したら
                 <div class="form__error">
                     @error('mail')
                     {{ $message }}
                     @enderror
                 </div>
-                -->
             </div>
         </div>
         <div class="form__group">
@@ -37,13 +35,11 @@
                 <div class="form__input--text">
                     <input type="password" name="password" placeholder="Password" />
                 </div>
-                <!-- エラー文実装したら
                 <div class="form__error">
                     @error('password')
                     {{ $message }}
                     @enderror
                 </div>
-                -->
             </div>
         </div>
         <div class="form__button">

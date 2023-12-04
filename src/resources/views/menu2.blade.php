@@ -11,6 +11,15 @@
 </head>
 
 <body>
+    <header class="header">
+        <div class="header__inner">
+            <a class="header__logo" href="/">
+                <span class="logo" check_menu>×</span>
+            </a>
+        </div>
+    </header>
+
+    
     <div class="menu__content">
         <ul style="list-style: none;">
             <li><a href="/">Home</a></li>

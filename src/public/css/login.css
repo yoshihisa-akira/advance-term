@@ -24,14 +24,24 @@
     background-color: #fff;
     border-radius: 0 0 6px 6px;
     box-shadow: 2px 1px 3px #aaa;
-    height: 150px;
+    height: 180px;
     width: 350px;
+}
+
+.form__group-icon {
+    margin-top: -20px;
 }
 
 .form__group {
     align-items: center;
     display: flex;
     padding: 18px 0 0 18px;
+}
+
+.form__error {
+    height: 20px;
+    color: #ff0000;
+    text-align: left;
 }
 
 .form__group-content {
@@ -46,7 +56,6 @@
 }
 
 .form__button {
-    margin-top: 20px;
     padding-left: 260px;
 }
 
