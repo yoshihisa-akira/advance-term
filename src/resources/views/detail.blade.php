@@ -31,14 +31,22 @@
             @csrf
             <h2 class="reserve__title">予約</h2>
             <input class="reserved_date" name="reserved_date" type="text" value="" placeholder="2023/04/01">
+            <div class="form__error">
+                @error('reserved_date')
+                {{ $message }}
+                @enderror
+            </div>
             <input class="reserved_time" name="reserved_time" type="text" value="" placeholder="17:00">
+            @error('reserved_time')
+            {{ $message }}
+            @enderror
             <input class="reserved_num" name="reserved_num" type="text" value="" placeholder="1人">
+            @error('reserved_num')
+            {{ $message }}
+            @enderror
             <input type="hidden" name="reserved_shop" value="{{ $shop->store_name }}">
             <input type="hidden" name="user_id" value="{{ $user->id }}">
             <div class="reserved__group">
-                <form class="reserved__group-number" action="/mypage" method="post">
-                    @csrf
-                </form>
                 <div class="reserved__group-flex">
                     <p class="text">Shop</p>
                     <p class="text">{{ $shop->store_name }}</p>
@@ -63,5 +71,6 @@
     </div>
     @endif
 </div>
+
 
 @endsection

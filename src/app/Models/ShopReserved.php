@@ -19,12 +19,4 @@ class ShopReserved extends Model
     );
 
     protected $table = "shops_reserved";
-
-    public function scopeRegionSearch($query, $region)
-    {
-        if (!empty($region)) {
-            $query->where('region', $region);
-        }
-    }
-
 }

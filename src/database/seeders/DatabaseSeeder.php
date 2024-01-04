@@ -18,5 +18,6 @@ class DatabaseSeeder extends Seeder
         $this->call(RegionsTableSeeder::class);
         $this->call(ShopsReservedTableSeeder::class);
         $this->call(ShopsTableSeeder::class);
+        $this->call(ShopsEvaluationTableSeeder::class);
     }
 }

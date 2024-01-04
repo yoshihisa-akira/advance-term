@@ -37,3 +37,25 @@
     font-size: 32px;
     text-decoration: none;
 }
+
+p {
+    background-color: aqua;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+            margin-left: 40px;
+        }
+
+    ul {
+        margin: 0 auto;
+        max-width: 768px;
+    }
+
+    .menu__content {
+        margin: 0 auto;
+        margin-right: 40px;
+        margin-top: 160px;
+        max-width: 768px;
+    }
+}

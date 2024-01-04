@@ -1,0 +1,38 @@
+.evaluation__content {
+    margin: 0 auto;
+    max-width: 1150px;
+}
+
+.evaluation__group {
+    background-color: #305dff;
+    margin-bottom: 20px;
+}
+
+.evaluation__num, .evaluation__text, .user_name {
+    color: #fff;
+    margin-left: 20px;
+}
+
+.evaluation__title {
+    background-color: #305dff;
+    color: #fff;
+    padding-left: 10px;
+}
+
+.evaluation__num, .evaluation__text {
+    display: flex;
+}
+
+.user_name {
+    padding-top: 10px;
+}
+
+.evaluation__text--wide {
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .evaluation__content {
+        max-width: 700px;
+    }
+}

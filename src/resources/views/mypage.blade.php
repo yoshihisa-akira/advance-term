@@ -23,22 +23,31 @@
                 <input type="hidden" name="id" value="{{ $shopReserved->id }}">
                 <input class="aaa" type="image" src="{{ asset('img/check.png') }}" alt="" width="30px" height="30px">
             </form>
-            <div class="reserved__group-flex">
-                <p class="text">Shop</p>
-                <p class="text">{{ $shopReserved->reserved_shop }}</p>
-            </div>
-            <div class="reserved__group-flex">
-                <p class="text">Date</p>
-                <p class="text">{{ $shopReserved->reserved_date }}</p>
-            </div>
-            <div class="reserved__group-flex">
-                <p class="text">Time</p>
-                <p class="text">{{ $shopReserved->reserved_time }}</p>
-            </div>
-            <div class="reserved__group-flex">
-                <p class="text">Number</p>
-                <p class="text">{{ $shopReserved->reserved_num }}</p>
-            </div>
+            <form action="/mypage/update" method="post">
+                @csrf
+                <input type="hidden" name="id" value="{{ $shopReserved->id }}">
+                <input type="hidden" name="user_id" value="{{ $user->id }}">
+                <div class="reserved__group-flex">
+                    <p class="text">Shop</p>
+                    <input class="input" name="reserved_shop" value="{{ $shopReserved->reserved_shop }}" readonly>
+                    <a class="evaluation" href="/evaluationCreate/{{ $shopReserved->id }}">評価する</a>
+                </div>
+                <div class="reserved__group-flex">
+                    <p class="text">Date</p>
+                    <input class="input" type="text" name="reserved_date" value="{{ $shopReserved->reserved_date }}" background="#000">
+                </div>
+                <div class="reserved__group-flex">
+                    <p class="text">Time</p>
+                    <input class="input" type="text" name="reserved_time" value="{{ $shopReserved->reserved_time }}">
+                </div>
+                <div class="reserved__group-flex">
+                    <p class="text">Number</p>
+                    <input class="input" name="reserved_num" value="{{ $shopReserved->reserved_num }}">
+                </div>
+                <div class="form__button">
+                    <button class="form__button-submit" type="submit">予約変更</button>
+                </div>
+            </form>
         </div>
         @endforeach
     </div>
@@ -52,35 +61,33 @@
                 お気に入り店舗
             </h2>
             <div class="favorite-shops__group">
+                @forElse($favoriteShops as $favoriteShop)
                 <div class="card">
                     <div class="card__img">
-                        <img src="{{ asset('img/sushi.jpg') }}" alt="" width="280px" height="150px">
+                        <img src="{{ asset('img/' . $favoriteShop->genre . '.jpg') }}" alt="" width="280px" height="150px">
                     </div>
                     <div class="card__content">
-                        <div class="card__content-cat">仙人</div>
+                        <div class="card__content-cat">{{ $favoriteShop->store_name }}</div>
                         <div class="card__content-tag">
-                            <p class="card__content-tag-item">#東京都</p>
-                            <p class="card__content-tag-item card__content-tag-item--last">#寿司</p>
+                            <p class="card__content-tag-item">#{{ $favoriteShop->region }}</p>
+                            <p class="card__content-tag-item card__content-tag-item--last">#{{ $favoriteShop->genre }}</p>
                         </div>
                         <div class="button">
                             <a class="button-submit" href="/sennin">詳しくみる</a>
-                            <img id="click_img" class="hurt-button" src="{{ asset('img/hurt_gray.png') }}" alt="">
-                            <script>
-                                var click = 0;
-                                var img = ['img/hurt_gray.png', 'img/hurt_red.png'];
-                                document.getElementById('click_img').onclick = function() {
-                                    click++;
-                                    this.src = img[click % img.length];
-                                }
-                            </script>
+                            <form class="favorite-remove__group" action="/delete" method="post">
+                                @csrf
+                                <input type="hidden" name="id" value="{{ $favoriteShop->id }}">
+                                <input class="hurt-button" type="image" src="{{ asset('img/hurt_red.png') }}" alt="" width="36px" height="36px">
+                            </form>
                         </div>
                     </div>
                 </div>
+                @empty
+                <p>お気に入りはありません</p>
+                @endforElse
             </div>
         </div>
     </div>
 </div>
-
-
 
 @endsection

@@ -1,8 +1,11 @@
 .search-form {
     align-items: center;
     display: flex;
-    width: 50%;
     font-size: 0;
+}
+
+.search-form__item {
+    display: flex;
 }
 
 .search-form__item-select {
@@ -40,6 +43,7 @@
     border-radius: 0 3px 3px 0;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
     height: 50.5px;
+    width: 80px;
 }
 
 .card__group {
@@ -65,7 +69,7 @@
 }
 
 .card__content {
-    padding: 15px 0 0 10px;
+    padding: 15px 0 0 15px;
 }
 
 .card__content-cat {
@@ -81,21 +85,50 @@
 }
 
 .button {
+    align-items: center;
     margin-top: 0px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.button-submit {
+.button-submit, .button-submit--width {
     background: #3860fc;
     border-radius: 3px;
     color: #fff;
     cursor: pointer;
     font-size: 12px;
-    height: 30px;
+    height: 28px;
     padding: 5px 10px;
     text-decoration: none;
-    width: 200px;
+    width: 80px;
 }
 
-.hurt-button {
-    margin-left: 140px;
+.button-submit--width {
+    width: 45px;
+}
+
+.hurt-red-button {
+    margin-right: 15px;
+}
+
+.hurt-gray-button {
+    margin-right: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .search-form {
+        margin-right: 20px;
+    }
+
+    .search-form__item {
+        display: flex;
+    }
+
+    .search-form__button-submit {
+        width: 80px;
+    }
+
+    .card__group {
+        margin-left: 105px;
+    }
 }

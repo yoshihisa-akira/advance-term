@@ -67,3 +67,11 @@
     cursor: pointer;
     padding: 3px 9px;
 }
+
+.width {
+    width: 768px;
+}
+
+@media screen and (max-width: 768px) {
+    
+}

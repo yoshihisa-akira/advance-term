@@ -44,15 +44,55 @@
     width: 100px;
 }
 
-.text {
+.text, .input {
     color: #fff;
     margin-left: 50px;
     margin-bottom: 15px;
     width: 100px;
 }
 
+.input {
+    border: none;
+    color: #fff;
+    background-color: #3860fc;
+    font-size: 16px;
+    outline: none;
+    margin-top: 20px;
+}
+
+.evaluation {
+    background-color: #0538ff;
+    color: #fff;
+    margin-left: 10px;
+    margin-top: 19px;
+    text-decoration: none;
+    height: 20px;
+}
+
+.form__button {
+    margin-bottom: -10px;
+    width: 550px;
+}
+
+.form__button-submit {
+    background: #0538ff;
+    border: none;
+    border-radius: 0 0 3px 3px;
+    color: #fff;
+    cursor: pointer;
+    height: 30px;
+    width: 550px;
+}
+
 .user__content {
     margin-left: 50px;
+}
+
+.favorite-shops__group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 600px;
 }
 
 .card {
@@ -60,7 +100,7 @@
     border-radius: 3px;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
     height: 280px;
-    margin-right: 10px;
+    margin-right: 7.5px;
     margin-bottom: 20px;
     width: 280px;
 }
@@ -70,7 +110,7 @@
 }
 
 .card__content {
-    padding: 15px 0 0 10px;
+    padding: 15px 0 0 15px;
 }
 
 .card__content-cat {
@@ -86,6 +126,9 @@
 }
 
 .button {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
     margin-top: 0px;
 }
 
@@ -95,12 +138,32 @@
     color: #fff;
     cursor: pointer;
     font-size: 12px;
-    height: 30px;
+    height: 28px;
     padding: 5px 10px;
     text-decoration: none;
-    width: 200px;
+    width: 100px;
+}
+
+.favorite-remove__group {
+    width: 50%;
 }
 
 .hurt-button {
-    margin-left: 140px;
+    margin-left: 80px;
+}
+
+@media screen and (max-width: 768px) {
+    .flex {
+        display: block;
+        margin: 0 auto;
+        max-width: 768px;
+    }
+
+    .reserved__content {
+        margin-left: 105px;
+    }
+
+    .user__content {
+        margin-left: 105px;
+    }
 }

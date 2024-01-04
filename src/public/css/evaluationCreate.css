@@ -1,46 +1,23 @@
-.flex {
-    display: flex;
-    margin: 0 auto;
-    max-width: 1200px;
-}
-
-.detail__group {
-    margin-left: 100px;
-    width: 500px;
-}
-
-.shop__title {
-    display: flex;
-}
-
-.shop__title a {
-    display: inline-block;
-    text-align: center;
-    text-decoration: none;
-    background-color: #fff;
-    border-radius: 3px;
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
-    color: #000;
-    width: 30px;
-}
-
-.shop__title h2 {
-    margin-left: 20px;
-    height: 50px;
-}
-
 .form {
     background-color: #305dff;
     border-radius: 3px;
-    margin-left: 100px;
-    height: 600px;
+    height: 500px;
     width: 500px;
 }
 
-.reserve__title {
+.evaluation__title {
     color: #fff;
     padding: 20px 0 0 0;
     margin: 0 0 10px 20px;
+}
+
+.evaluation-num {
+    color: #fff;
+    margin-left: 20px;
+}
+
+label {
+    color: #fff;
 }
 
 input {
@@ -51,7 +28,14 @@ input {
     padding: 3px;
 }
 
-.reserved_time, .reserved_num {
+textarea {
+    resize: none;
+    outline: none;
+    margin-left: 20px;
+}
+
+.evaluation_time,
+.evaluation_num {
     width: 400px;
 }
 
@@ -61,12 +45,11 @@ input {
     max-width: 1200px;
 }
 
-.reserved__content {
+.evaluation__content {
     width: 50%;
 }
 
-.reserved__group {
-    background-color: #4d7fff;
+.evaluation__group {
     border-radius: 3px;
     padding-bottom: 10px;
     padding-top: 10px;
@@ -75,7 +58,7 @@ input {
     width: 460px;
 }
 
-.reserved__group-flex {
+.evaluation__group-flex {
     display: flex;
 }
 
@@ -96,16 +79,4 @@ input {
     padding: 3px 9px;
     height: 50px;
     width: 500px;
-}
-
-@media screen and (max-width: 768px) {
-    .flex {
-        display: block;
-        margin-left: 30px;
-    }
-
-    .reserve__group {
-        margin-top: 60px;
-        margin-bottom: 40px;
-    }
 }

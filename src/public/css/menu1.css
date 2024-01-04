@@ -45,3 +45,16 @@
     cursor: pointer;
     font-size: 32px;
 }
+
+@media screen and (max-width: 768px) {
+    .header {
+        margin-left: 40px;
+    }
+
+    .menu__content {
+        margin: 0 auto;
+        margin-top: 160px;
+        margin-right: 40px;
+        max-width: 768px;
+    }
+}
